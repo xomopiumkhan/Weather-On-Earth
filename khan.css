@@ -23,7 +23,7 @@ body {overflow: hidden; overflow-Y: scroll;}
 /* End */
 
 /*Main Section Of App*/
-.main-app {background: url(/images/night.jpg); background-size: cover; height: 100vh; color: var(--mainfcolor);}
+.main-app {background: url(images/night.jpg); background-size: cover; height: 100vh; color: var(--mainfcolor);}
 
 /*Loader*/
 .loader {height: 100vh; width: 20%; background: rgba(8, 18, 155, 0.2);position: absolute; top: 0; left: -20%; backdrop-filter: blur(5px); z-index: 5; transition: 2s ease;}
