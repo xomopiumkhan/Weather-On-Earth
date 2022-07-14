@@ -66,7 +66,7 @@ body {overflow: hidden; overflow-Y: scroll;}
 .day-other-forecasts P:first-child {margin-right: 10px;}
 
 /*About Us*/
-.about-us {background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.6)),url(/images/about.jpg); background-size: cover; height: 100vh; color: #fff; position: relative;}
+.about-us {background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.6)),url(images/about.jpg); background-size: cover; height: 100vh; color: #fff; position: relative;}
 .about-wrapper {position: absolute; top: 35%}
 .about-us h2 {text-align: center; font-family: var(--mainfont); font-size: 40px;}
 .about-us p {width: 85%; margin: 0 auto; text-align: center; font-family: var(--parafont); margin-top: 30px; font-size: 21px;}
