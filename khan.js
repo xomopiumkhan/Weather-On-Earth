@@ -76,15 +76,15 @@ function getWeather(ip) {
 
             if ((data.current.condition.text).search('rain') > 0) {
                 wImage.src = 'images/rain.png';
-                backgroundImg.style.background = "url('/images/rain.jpg')";
+                backgroundImg.style.background = "url('images/rain.jpg')";
                 backgroundImg.style.backgroundSize = 'cover';
             } else if ((data.current.condition.text).search('cloudy') > 0) {
                 wImage.src = 'images/cloud.png';
-                backgroundImg.style.background = "url('/images/clouds.jpg')";
+                backgroundImg.style.background = "url('images/clouds.jpg')";
                 backgroundImg.style.backgroundSize = 'cover';
             } else if ((data.current.condition.text).search('Sunny') >= 0) {
                 wImage.src = 'images/sun.png';
-                backgroundImg.style.background = "url('/images/day.jpg')";
+                backgroundImg.style.background = "url('images/day.jpg')";
                 backgroundImg.style.backgroundSize = 'cover';
             } else {
                 wImage.src = 'images/sun.png';
