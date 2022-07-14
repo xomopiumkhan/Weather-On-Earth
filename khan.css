@@ -1,0 +1,123 @@
+* {padding: 0; margin: 0;} 
+
+/*Placeholder CSS*/
+::placeholder {font-weight: 400;}
+html {scroll-behavior: smooth;}
+body {overflow: hidden; overflow-Y: scroll;}
+
+/*CSS Vars*/
+:root {
+    --mainfont: 'Montserrat', sans-serif;
+    --parafont: 'Poppins', sans-serif;
+    --maincolor: #252555;
+    --mainhovercolor: #924381;
+    --mainfcolor: #fff;
+}
+
+
+/*Scroll Bar Css*/
+::-webkit-scrollbar {height: 7px; width: 5px;} 
+::-webkit-scrollbar-track {background: rgba(0,0,0,0.1)} 
+::-webkit-scrollbar-thumb { background: rgba(0,0,0,0.3); border-radius: 1px} 
+::-webkit-scrollbar-thumb:hover { background: rgba(0,0,0,0.4); }
+/* End */
+
+/*Main Section Of App*/
+.main-app {background: url(/images/night.jpg); background-size: cover; height: 100vh; color: var(--mainfcolor);}
+
+/*Loader*/
+.loader {height: 100vh; width: 20%; background: rgba(8, 18, 155, 0.2);position: absolute; top: 0; left: -20%; backdrop-filter: blur(5px); z-index: 5; transition: 2s ease;}
+
+/*Top-Header*/
+.navbar {display: flex; justify-content: space-between; width: 85%; margin: 0 auto; padding: 15px 0; font-family: var(--mainfont); align-items: center;}
+.logo {font-size: 25px; font-weight: 500;}
+.nav-links {display: flex;; align-items: center;}
+.nav-links a {margin-right: 30px; text-decoration: none; font-size: 16px; font-weight: 500; position: relative; transition: 0.3s; color: #111; color: var(--mainfcolor);}
+.nav-links a:hover {color: #ffd311;}
+.search-area {margin-right: 10px; width: 200px; outline: none; border: none; padding: 8px 10px; font-family: var(--mainfont); font-size: 15px; font-weight: 500; border-bottom: 1px solid #111; background: rgb(241, 237, 237)}
+.btn {background: #252555; color: var(--mainfcolor);border: none; font-family: var(--mainfont); font-size: 16px; font-weight: 500; padding: 8px 15px; cursor: pointer; transition: 0.3s;}
+.btn:hover {background: var(--mainhovercolor);}
+.mobile-menu-trigger {display: none;}
+.close-mobile-menu {display: none;}
+
+/*Main Header*/
+.current-day {background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.6)); width: 35%; margin: 0 auto; margin-top: 3%; text-align: center; padding: 50px;}
+/*Main Frecast*/
+.temperature-div {display: flex; align-items: center; justify-content: center;}
+.main-forecast p {font-family: var(--parafont); font-size: 18px;}
+.temp {font-family: 'Cabin'; font-size: 100px; margin: 0 15px; font-weight: 500; display: flex;}
+.temp span {font-size: 50px; margin-top: 10px;}
+.temperature-div img {width: 20%}
+.temp-units {margin-left: 20px;}
+.temp-units p {font-family: var(--mainfont); font-size: 28px; cursor: pointer; transition: 0.3s; font-weight: 500;}
+.temp-units p:not(:last-child) {margin-bottom: 10px;}
+/*Other Forecasts*/
+.other-forecasts {margin-top: 8%; display: grid; grid-template-columns: auto auto auto; grid-row-gap: 10px;}
+.other-forecasts p {font-family: var(--mainfont); font-weight: 500; font-size: 17px;}
+
+/*Weekly Forecast*/
+.weekly-forecast {display: flex; width: 85%; margin: 0 auto; background: rgb(238, 238, 238, 0.9); padding: 5px; border-radius: 10px; margin-top: 2%; justify-content: space-between; color: #111;}
+.day-block {width: 15%; text-align: center; font-family: var(--mainfont); padding: 10px 0;}
+.day-block:not(:last-child) {border-right: 1px solid rgb(109, 109, 109)}
+.day-temp-div {margin: 15px 0; display: flex; justify-content: center; align-items: center;}
+.day-temp-div img {width: 25%;}
+.day-temp-div h2 {font-size: 30px; margin-right: 10px;}
+.day-other-forecasts {display: flex; justify-content: center; font-weight: 500;}
+.day-other-forecasts P:first-child {margin-right: 10px;}
+
+/*About Us*/
+.about-us {background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.6)),url(/images/about.jpg); background-size: cover; height: 100vh; color: #fff; position: relative;}
+.about-wrapper {position: absolute; top: 35%}
+.about-us h2 {text-align: center; font-family: var(--mainfont); font-size: 40px;}
+.about-us p {width: 85%; margin: 0 auto; text-align: center; font-family: var(--parafont); margin-top: 30px; font-size: 21px;}
+
+/*Contact Us*/
+.contact-wrapper {padding: 230px 0; text-align: center;}
+.contact-wrapper h2 {font-family: var(--mainfont); font-size: 70px; letter-spacing: 25px;}
+.contact-flex {display: flex; align-items: center; justify-content: space-between; width: 80%; margin: 0 auto; margin-top: 5%; }
+.contact-flex p {font-family: var(--mainfont); font-size: 20px; display: flex; align-items: center;}
+.contact-flex p:not(:last-child) {margin-right: 30px;}
+.contact-flex i {margin-right: 20px; font-size: 50px;}
+
+
+
+
+@media screen and (max-width: 600px) {
+    
+    /*Top Header*/
+    .navbar {width: 92%; padding: 10px 0}
+    .logo {font-size: 22px;}
+    .mobile-menu-trigger {display: block; transform: rotate(90deg); font-family: var(--mainfont); font-size: 22px; font-weight: 500; cursor: pointer;}
+    .close-mobile-menu {display: inline-block; padding: 15px; font-family: var(--mainfont); font-size: 30px; font-weight: 500; cursor: pointer; text-align: right; margin-bottom: 120px; outline:none}
+    .nav-links a {display: block; margin-right: none; margin-bottom: 20px; padding-left: 90px; font-size: 20px;}
+    .nav-links {position: absolute; background: rgba(0,0,0,0.6); top: 0; left: -500px; display: block; height: 100vh; width: 100%; transition: 0.7s; backdrop-filter: blur(5px);}
+    .search-input {padding-left: 90px; margin-top: 30px}
+    .btn {display: block; margin-top: 10px; font-size: 20px;}
+    .search-area {font-size: 17px;}
+
+    /*Main Header*/
+    .current-day {width: 92%; padding: 50px 10px; margin-top: 8%;}
+    .other-forecasts {margin-top: 10%; display: flex; flex-wrap: wrap; justify-content: space-evenly;}
+    .other-forecasts p {font-size: 15px;}
+    .other-forecasts P:not(:last-child) {margin-right: 10px;}
+
+    /*Weekly Forecast*/
+    .day.temp-div img {width: 25%}
+    .day-temp-div h2 {font-size: 20px;}
+    .weekly-forecast {overflow: hidden; overflow-x: scroll; border-radius: 5px; width: 91%; margin-top: 8%;}
+    .day-block {width: 100%; padding: 10px 30px;}
+
+    /*About*/
+    .about-us {background-position-x: -200px}
+    .about-wrapper {top: 32%;}
+    .about-us h2 {font-size: 30px;}
+    .about-us p {font-size: 16px; width: 92%; text-align: justify;}
+
+    /*Contact*/
+    .contact-wrapper {padding: 220px 0;}
+    .contact-wrapper h2 {font-size: 50px; letter-spacing: 8px;}
+    .contact-flex {width: 90%; flex-wrap: wrap; text-align: center; margin-top: 10%;}
+    .contact-flex i {font-size: 30px;}
+    .contact-flex p:not(:last-child) {margin-bottom: 30px;}
+
+}

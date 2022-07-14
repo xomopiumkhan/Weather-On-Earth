@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Firoz Khan">
+    <link rel="stylesheet" href="/khan.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&family=El+Messiri:wght@400;500;600;700&family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Orbitron:wght@400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Proza+Libre:wght@400;500;600;700;800&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,900&display=swap" rel="stylesheet">
+    <title>Weather On Earth</title>
+    <script src="https://kit.fontawesome.com/92bbd1615e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div class="loader">
+
+    </div>
+    
+    <section class="main-app" id="home">
+
+        <!--Top Header-->
+        <section class="top-header">
+            <div class="navbar">
+                <div class="logo">Weather On Earth.</div>
+                <div class="mobile-menu-trigger">|||</div>
+                <div class="nav-links">
+                    <div class="close-mobile-menu"><i class="fa-solid fa-xmark"></i></div>
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#contact">Contact Us</a>
+                    <div class="search-input">
+                        <input type="text" class="search-area" placeholder="eg: New York">
+                        <button class="btn">Get Weather</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Main Header-->
+        <section class="main-header">
+
+            <div class="current-day">
+                <div class="main-forecast">
+                    <p class="city-name">Chandigarh<span class="date">, Date</span></p>
+                    <div class="temperature-div">
+                        <img src="/images/sun.png" alt="weather-image" class="w-image">
+                        <h2 class="temp">40<span>°</span></h2>
+                        <div class="temp-units">
+                            <p class="celcius">C</p>
+                            <p class="fahrenheit" style="font-size: 18px;">F</p>    
+                        </div>
+                    </div>
+                    <p class="weather-description">Weather Description</p>
+                </div>
+                <div class="other-forecasts">
+                    <p class="humidity">Humidity: <span class="humidty-value">90%</span></p>
+                    <p class="precipitation">Rainfall: <span class="rainfall-value">50%</span></p>
+                    <p class="wind">Wind: <span class="wind-value">12km/h</span></p>
+                    <p class="feels-like">Feels Like: <span class="feels-like-value">40°</span></p>
+                    <p class="visibility">Visibility: <span class="visibility-value">50m</span></p>
+                    <p class="aqi">Air Quality Index: <span class="aqi-value">12</span></p>
+                </div>
+            </div>
+
+            <!--Weekly Forecast-->
+            <div class="weekly-forecast">
+                <div class="day-block">
+                    <h3>Thursday</h3>
+                    <div class="day-temp-div">
+                        <h2 class="day-temp">40<span>°</span></h2>
+                        <img src="/images/sun.png">
+                    </div>
+                    <div class="day-other-forecasts">
+                        <p class="day-rain">R: <span class="day-rain-value">50%</span></p>
+                        <p class="day-wind">W: <span class="day-wind-value">13KM/H</span></p>
+                    </div>
+                </div>
+                <div class="day-block">
+                    <h3>Thursday</h3>
+                    <div class="day-temp-div">
+                        <h2 class="day-temp">40<span>°</span></h2>
+                        <img src="/images/sun.png">
+                    </div>
+                    <div class="day-other-forecasts">
+                        <p class="day-rain">R: <span class="day-rain-value">50%</span></p>
+                        <p class="day-wind">W: <span class="day-wind-value">13KM/H</span></p>
+                    </div>
+                </div>
+                <div class="day-block">
+                    <h3>Thursday</h3>
+                    <div class="day-temp-div">
+                        <h2 class="day-temp">40<span>°</span></h2>
+                        <img src="/images/sun.png">
+                    </div>
+                    <div class="day-other-forecasts">
+                        <p class="day-rain">R: <span class="day-rain-value">50%</span></p>
+                        <p class="day-wind">W: <span class="day-wind-value">13KM/H</span></p>
+                    </div>
+                </div>
+                <div class="day-block">
+                    <h3>Thursday</h3>
+                    <div class="day-temp-div">
+                        <h2 class="day-temp">40<span>°</span></h2>
+                        <img src="/images/sun.png">
+                    </div>
+                    <div class="day-other-forecasts">
+                        <p class="day-rain">R: <span class="day-rain-value">50%</span></p>
+                        <p class="day-wind">W: <span class="day-wind-value">13KM/H</span></p>
+                    </div>
+                </div>
+                <div class="day-block">
+                    <h3>Thursday</h3>
+                    <div class="day-temp-div">
+                        <h2 class="day-temp">40<span>°</span></h2>
+                        <img src="/images/sun.png">
+                    </div>
+                    <div class="day-other-forecasts">
+                        <p class="day-rain">R: <span class="day-rain-value">50%</span></p>
+                        <p class="day-wind">W: <span class="day-wind-value">13KM/H</span></p>
+                    </div>
+                </div>
+                <div class="day-block">
+                    <h3>Thursday</h3>
+                    <div class="day-temp-div">
+                        <h2 class="day-temp">40<span>°</span></h2>
+                        <img src="/images/sun.png">
+                    </div>
+                    <div class="day-other-forecasts">
+                        <p class="day-rain">R: <span class="day-rain-value">50%</span></p>
+                        <p class="day-wind">W: <span class="day-wind-value">13KM/H</span></p>
+                    </div>
+                </div>
+                <div class="day-block">
+                    <h3>Thursday</h3>
+                    <div class="day-temp-div">
+                        <h2 class="day-temp">40<span>°</span></h2>
+                        <img src="/images/sun.png">
+                    </div>
+                    <div class="day-other-forecasts">
+                        <p class="day-rain">R: <span class="day-rain-value">50%</span></p>
+                        <p class="day-wind">W: <span class="day-wind-value">13KM/H</span></p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+    </section>
+
+    <section class="about-us" id="about">
+        <div class="about-wrapper">
+            <h2>About Us</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore sit, voluptate natus dolor numquam laboriosam recusandae quae veniam mollitia id totam in consequatur illum asperiores doloribus nesciunt debitis officiis excepturi minus et cum a, eligendi expedita reiciendis. Eum placeat temporibus voluptatem ipsum reiciendis eaque quod, minus itaque facere tempora quidem?</p>    
+        </div>
+    </section>
+
+    <secion class="contact-us" id="contact">
+        <div class="contact-wrapper">
+            <h2>THE KHAN ORG</h2>
+            <div class="contact-flex">
+                <p><i class="fa-solid fa-envelope"></i>firozkhan90055@gmail.com</p>
+                <p><i class="fa-brands fa-github"></i>github/xomopiumkhan</p>
+                <p><i class="fa-brands fa-instagram-square"></i>instagram/xomopiumkhan</p>
+            </div>
+        </div>
+    </secion>
+
+
+
+
+
+
+
+
+
+
+
+    <script src="/khan.js"></script>
+
+</body>
+</html>
