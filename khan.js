@@ -40,7 +40,7 @@ const backgroundImg = document.querySelector('.main-app');
 
 
 //JS Others
-let date = new Date();
+
 let months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
 
 
@@ -63,6 +63,9 @@ function getWeather(ip) {
     fetch(`https://api.weatherapi.com/v1/current.json?key=3bd9a27cda37433980e115228221107&q=${ip}&aqi=yes`)
         .then(response => response.json())
         .then(data => {
+        
+            //Date
+            let date = new Date();
             //Assigning Data TO HTML
             temp.innerHTML = (data.current.temp_c).toFixed(0) + '<span>°</span>';
             cityName.innerHTML = data.location.name + ', ' + date.getDay() + ' ' + months[date.getMonth()] + ' ' + date.getFullYear();
